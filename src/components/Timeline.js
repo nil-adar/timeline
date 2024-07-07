@@ -1,21 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './Timeline.css';
 
 const Timeline = ({ events }) => {
   return (
-    <div>
-      <h1>Events Timeline</h1>
-      <ul>
-        {events.map(event => (
-          <li key={event.id}>
-            <h2>{event.title}</h2>
-            <p>{event.date}</p>
+    <div className="timeline">
+      {events.map((event, index) => (
+        <div key={event.id} className="timeline-event">
+          <div className="timeline-dot"></div>
+          <div className="timeline-content">
+            <h3>{event.title}</h3>
+            <p>{new Date(event.date).toLocaleDateString()}</p>
             <p>{event.location}</p>
             <p>{event.description}</p>
-            <Link to={`/event/${event.id}`}>View Details</Link>
-          </li>
-        ))}
-      </ul>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

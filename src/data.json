@@ -1,101 +1,44 @@
 {
-  "wars": [
+  "events": [
     {
       "id": 1,
-      "title": "מלחמת העצמאות",
+      "title": "Establishment of the State of Israel",
       "date": "1948-05-14",
-      "location": "ישראל",
-      "description": "הכרזת העצמאות של מדינת ישראל והמלחמה בעקבותיה"
+      "location": "Tel Aviv, Israel",
+      "description": "David Ben-Gurion proclaimed the establishment of the State of Israel.",
+      "categories": ["israeliEvents", "historic"]
     },
     {
       "id": 2,
-      "title": "מלחמת סיני",
-      "date": "1956-10-29",
-      "location": "סיני",
-      "description": "מלחמה בין ישראל, בריטניה וצרפת לבין מצרים"
+      "title": "The Six-Day War",
+      "date": "1967-06-05",
+      "location": "Israel and neighboring countries",
+      "description": "Israel fought against Egypt, Jordan, and Syria, significantly altering the political landscape of the Middle East.",
+      "categories": ["israeliEvents", "wars"]
     },
     {
       "id": 3,
-      "title": "מלחמת ששת הימים",
-      "date": "1967-06-05",
-      "location": "ישראל",
-      "description": "מלחמה בין ישראל למדינות ערב שנמשכה שישה ימים"
+      "title": "Peace Treaty with Egypt",
+      "date": "1979-03-26",
+      "location": "Washington, D.C., USA",
+      "description": "Israel and Egypt signed a peace treaty, the first between Israel and an Arab country.",
+      "categories": ["israeliEvents", "historic"]
     },
     {
       "id": 4,
-      "title": "מלחמת ההתשה",
-      "date": "1967-06-11",
-      "location": "גבולות ישראל",
-      "description": "מלחמה בין ישראל למצרים, ירדן וארגוני טרור פלסטינים שנמשכה עד 1970"
+      "title": "Oslo Accords",
+      "date": "1993-09-13",
+      "location": "Washington, D.C., USA",
+      "description": "The Oslo Accords were signed between Israel and the PLO, aiming to resolve the Israeli-Palestinian conflict.",
+      "categories": ["israeliEvents"]
     },
     {
       "id": 5,
-      "title": "מלחמת יום הכיפורים",
-      "date": "1973-10-06",
-      "location": "ישראל",
-      "description": "מלחמה בין ישראל לבין מצרים וסוריה שהחלה ביום הכיפורים"
-    },
-    {
-      "id": 6,
-      "title": "מלחמת לבנון הראשונה",
-      "date": "1982-06-06",
-      "location": "לבנון",
-      "description": "מלחמה בין ישראל לבין ארגוני טרור פלסטינים בלבנון"
-    },
-    {
-      "id": 7,
-      "title": "מלחמת לבנון השנייה",
-      "date": "2006-07-12",
-      "location": "לבנון",
-      "description": "מלחמה בין ישראל לחזבאללה שהחלה בחטיפת שני חיילי צה\"ל"
-    },
-    {
-      "id": 8,
-      "title": "מבצע עופרת יצוקה",
-      "date": "2008-12-27",
-      "location": "רצועת עזה",
-      "description": "מבצע צבאי של ישראל נגד ארגון חמאס ברצועת עזה"
-    },
-    {
-      "id": 9,
-      "title": "מבצע עמוד ענן",
-      "date": "2012-11-14",
-      "location": "רצועת עזה",
-      "description": "מבצע צבאי של ישראל נגד ארגון חמאס ברצועת עזה"
-    },
-    {
-      "id": 10,
-      "title": "מבצע צוק איתן",
-      "date": "2014-07-08",
-      "location": "רצועת עזה",
-      "description": "מבצע צבאי של ישראל ברצועת עזה במטרה לפגוע בתשתיות הטרור ברצועה והשמדת  המנהרות  חוצות הגדר "
-    },
-
-    {
-      "id": 11,
-      "title": "מלחמת חרבות ברזל ",
-      "date": "2023-07-10",
-      "location": "  רצועת עזה כגיזרה עיקרית ומגוון זירות לחימה נוספות ",
-      "description": "מבצע צבאי של ישראל נגד אירנגוני הטרור ברצעות עזה ולמעןהשבת החטופים  "
-    }
-    
-  ],
-  "space": [
-    {
-      "id": 1,
-      "title": "Moon Landing",
-      "date": "1969-07-20",
-      "location": "The Moon",
-      "description": "Apollo 11 was the first manned mission to land on the Moon."
-    }
-  ],
-  "historic": [
-    {
-      "id": 1,
-      "title": "Independence Day",
-      "date": "1948-05-14",
-      "location": "Tel Aviv, Israel",
-      "description": "The declaration of the establishment of the State of Israel."
+      "title": "Operation Entebbe",
+      "date": "1976-07-04",
+      "location": "Entebbe, Uganda",
+      "description": "Israeli commandos rescued hostages from a hijacked Air France flight at Entebbe Airport.",
+      "categories": ["israeliEvents", "wars"]
     }
   ]
 }

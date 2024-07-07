@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 const EventDetailsPage = ({ events }) => {
   const { eventId } = useParams();
-  const navigate = useNavigate();
   const event = events.find(e => e.id === parseInt(eventId));
+  const navigate = useNavigate();
 
   if (!event) {
     return <div>Event not found</div>;
@@ -12,9 +12,9 @@ const EventDetailsPage = ({ events }) => {
 
   return (
     <div className="event-details-page">
-      <button className="back-button" onClick={() => navigate('/')}>חזור</button>
+      <button onClick={() => navigate(-1)}>חזור</button>
       <h2>{event.title}</h2>
-      <p><strong>Date:</strong> {event.date}</p>
+      <p><strong>Date:</strong> {new Date(event.date).toLocaleDateString()}</p>
       <p><strong>Location:</strong> {event.location}</p>
       <p><strong>Description:</strong> {event.description}</p>
     </div>
