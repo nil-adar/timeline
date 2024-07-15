@@ -5,6 +5,7 @@ import eventData from './data.json';
 import Timeline from './components/Timeline';
 import EventDetailsPage from './components/EventDetailsPage';
 import ToggleSwitch from './components/ToggleSwitch';
+import { getCovidHistory } from './services/covic.service';
 
 function App() {
   const [category, setCategory] = useState('all');
@@ -70,9 +71,15 @@ function App() {
     return locations.map(location => <option key={location} value={location}>{location}</option>);
   };
 
+  useEffect(() => {
+    getCovidHistory().then((history) => {
+      console.log(history)
+    })
+  }, [])
+
   return (
     <Router>
-      <div className={`App ${isNightMode ? 'night-mode' : 'day-mode'}`}>
+      <div className={`App ${isNightMode ? 'night-mode' : 'day-mode'}]`}>
         <ToggleSwitch isNightMode={isNightMode} toggleNightMode={toggleNightMode} />
         <header className="App-header">
           <select onChange={handleCategoryChange} value={category}>

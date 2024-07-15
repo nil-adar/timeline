@@ -3,7 +3,7 @@ import './Timeline.css';
 
 const Timeline = ({ events }) => {
   return (
-    <div className="timeline">
+    <div className='flex flex-row'>
       {events.map((event, index) => (
         <div key={event.id} className="timeline-event">
           <div className="timeline-dot"></div>

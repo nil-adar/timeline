@@ -1,8 +1,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 80px; /* הגדלת הרוחב */
-  height: 40px; /* הגדלת הגובה */
+  width: 80px; 
+  height: 40px; 
   margin-left:-10px;
   margin-right:-2300px;
 }
